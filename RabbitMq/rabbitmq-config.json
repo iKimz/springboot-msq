@@ -1,0 +1,18 @@
+[
+    {
+        "name": "my_exchange",
+        "type": "direct",
+        "durable": true
+    },
+    {
+        "name": "my_queue",
+        "durable": true
+    },
+    {
+        "source": "my_exchange",
+        "vhost": "/",
+        "destination": "my_queue",
+        "destination_type": "queue",
+        "routing_key": "my_route"
+    }
+]
